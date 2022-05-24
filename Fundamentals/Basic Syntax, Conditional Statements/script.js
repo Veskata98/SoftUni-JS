@@ -213,12 +213,96 @@
 //   console.log(`Left money: ${moneyFromGold.toFixed(2)} lv.`);
 // }
 
-// solve([100, 200, 300]);
+// solve([100, 200, 300]);\
 
-let a = 11;
-let b = "11";
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
-if (a == b) console.log("yes");
-else {
-  console.log("no");
+//MORE EXERCISE
+
+// 1.	Sort Numbers
+// Receive three numbers and you have to sort them in descending order. Print each number on a new line.
+
+// function sortNumbers(n1, n2, n3) {
+//   let array = [];
+//   array.push(n1, n2, n3);
+//   console.log(array.sort((a, b) => b - a).join("\r\n"));
+// }
+
+// sortNumbers(2, 1, 3);
+
+// 2.	English Name of the Last Digit
+// Write a function that returns the English name of the last digit of a given number. Write a program that receives a number and prints the returned value from this function.
+
+// function lastDigitToNane(number) {
+//   let lastDigit = number.toString().split("");
+//   switch (+lastDigit[lastDigit.length - 1]) {
+//     case 0:
+//       console.log("zero");
+//       break;
+//     case 1:
+//       console.log("one");
+//       break;
+//     case 2:
+//       console.log("two");
+//       break;
+//     case 3:
+//       console.log("three");
+//       break;
+//     case 4:
+//       console.log("four");
+//       break;
+//     case 5:
+//       console.log("five");
+//       break;
+//     case 6:
+//       console.log("six");
+//       break;
+//     case 7:
+//       console.log("seven");
+//       break;
+//     case 8:
+//       console.log("eight");
+//       break;
+//     case 9:
+//       console.log("nine");
+//       break;
+//   }
+// }
+
+// lastDigitToNane(510);
+
+// 3.	Next Day
+// Write a JS function that calculates the date of the next day by given year, month, and day.
+// The input comes as three number parameters. The first element is the year, the second is the month and the third is the day.
+
+// function nextDay(year, month, date) {
+//   let day = new Date(year, month, date);
+
+//   let nextDay = new Date(day);
+//   nextDay.setDate(day.getDate() + 1);
+//   console.log(
+//     `${nextDay.getFullYear()}-${nextDay.getMonth()}-${nextDay.getDate()}`
+//   );
+// }
+
+// nextDay(2020, 3, 24);
+
+// 4.	Reverse String
+// Write a program that reverses a string and prints it on the console.
+
+// function reverseString(string) {
+//   console.log(string.split("").reverse().join(""));
+// }
+
+// reverseString("Hello");
+
+// 5.	Distance Between Points
+// Write a JS function that calculates the distance between two points by given x and y coordinates.
+// The input comes as four number elements in the format x1, y1, x2, y2. Each pair of elements are the coordinates of a point in 2D space.
+
+function distance(x1, y1, x2, y2) {
+  console.log(Math.hypot(x2 - x1, y2 - y1).toFixed(14));
 }
+
+distance(2.33, 17, -3.954, -11.2);
